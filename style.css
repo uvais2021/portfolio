@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c1440;
+}
+
+.navContainer {
+    background-color: #0c1440;
+    /* Dark blue color for the night sky background */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.navLinks li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.navLinks li a {
+    color: #fff;
+    /* White text color */
+    text-decoration: none;
+    padding: 8px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the stars using pseudo-elements */
+.navLinks li::before {
+    content: "\2605";
+    /* Unicode character for a star (★) */
+    color: #ffcc00;
+    /* Yellow color for the stars */
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 14px;
+}
+
+.navLinks li:first-child::before {
+    content: "";
+    /* Remove star from the first list item (About) */
+}
+
+/* ********************************************************************************** */
+.heroSection {
+    display: flex;
+}
+
+.heroSection img {
+    width: 300px;
+    border-radius: 30px;
+    margin: 70px 0 0 100px;
+    position: absolute;
+
+}
+
+.heroSection .contents {
+    background-color: #cbb146;
+    border-radius: 30px;
+    padding: 80px 0 20px 80px;
+    height: 50%;
+    width: 70%;
+    margin: 100px 0 0 350px;
+}
+
+.contents p {
+    padding: 20px 20px 20px 0;
+    font-size: 22px;
+}
+
+.heroSection h1,
+p {
+    /* color: white; */
+}
+
+/* ************************************************************************** */
+.Qualification {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 20px 100px 100px 150px;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+    padding: 100px 0 30px 0;
+}
+#h1{
+    text-align: center;
+    color: white;
+    padding: 1px 0 30px 0;
+}
+.Qualification .boxContainer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    /* background-size: cover; */
+}
+
+.Qualification .box {
+    background-repeat: no-repeat;
+    /* padding: 80px; */
+    /* background-image: url(./images/pg.png); */
+    background-color: #cbb146;
+    border-radius: 30px;
+    width: 400px;
+    /* margin-left: 200px; */
+    /* position: absolute; */
+}
+
+.Qualification .box p {
+    padding: 30px;
+}
+
+.Qualification .boxContainer h3 {
+    padding: 10px 0;
+    background-color: #eae2e2;
+    border-radius: 30px;
+    /* width: 170px; */
+    width: 200px;
+    margin-left: 110px;
+
+}
+/* *************************************************************************************** */
+.pics {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pics .html, .boot{
+    height: 300px;
+    width: 300px;
+}
+.pics .css{
+    height: 300px;
+    width: 220px;
+}
+/* ******************************************************************************** */
+.proj img{
+    width: 430px;
+    height: 230px;
+    /* aspect-ratio: 26/9; */
+    border-radius: 20px;
+    /* padding: 20px; */
+    margin: 10px;
+}
+.proj img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.proj {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+.proj h2{
+    text-align: center;
+    color: white;
+    padding: 20px 0 30px 0;
+}
+
+
+
+
